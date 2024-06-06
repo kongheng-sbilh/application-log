@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: 'konghengsbilh/application-log:latest'
+    container_name: application-log
+    ports:
+      - '8080:8080'
+    volumes:
+      - ~/app/logs:/root/app/logs
